@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<body>
+<div class="container", style="padding-left: 35%; padding-top: 10%; padding-right: 35%;">
+  <h1 style="color: #FFFFFF;">Registration form </h1>
+  <div style="padding:20px; background-color: #FFFFFF;">
+    <form name="registration" class="registartion-form">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name" ></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password"></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="your favourite programming language"> Your Favourite Programming Language:</label></td>
+        <div id="lang">
+        <td>HTML: <input type="radio" name=" your favourite programming language " value="HTML">
+          CSS: <input type="radio" name=" your favourite programming language " value="CSS">
+          JavaScript: <input type="radio" name=" your favourite programming language " value="JavaScript"></td>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="City you’d like to travel to"> City you’d like to travel to </label></td>
+        <td>
+          <select id="city",name=" City you’d like to travel to ">
+            <option value="">Select City</option>
+            <option value="Chicago">Chicago</option>
+            <option value="NewYork City">NewYork City</option>
+            <option value="Paris">Paris</option>
+            <option value="London">London</option>
+            <option value="Los Angeles">Los Angeles</option>
+          </select>
+        </td>
+      </tr>
+      </tr>
+      
+      <tr>
+        <td colspan="2"><button type="button" class="submit" onclick="formValidation()">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</div>
+</body>
+<script src="form.js"></script>
+</html> 
